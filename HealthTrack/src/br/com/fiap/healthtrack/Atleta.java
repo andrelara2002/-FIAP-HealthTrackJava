@@ -1,13 +1,13 @@
 package br.com.fiap.healthtrack;
 /**
  * Classe que determina os tipos de esportes
- * que o usuário pratica, como uma parte da
- * classe Usuario.
+ * que o usuário pratica, herda atributos
+ * da classe usuário.
  * 
  * @author André de Lara RM85856
  * @version 1.0
  */
-public class Atleta {
+public class Atleta extends Usuario{
     /**
      * String que vai recuperar os tipos de 
      * esportes armazenados pelo sistema,
@@ -15,7 +15,11 @@ public class Atleta {
      * array.
      */
     private String esportePraticado;
-
+    /**
+     * int que vai recuperar o período
+     * que o usuário pratica tal esporte
+     */
+    private int tempoDePratica;
     /**
      * Recupera os esportes que estão sendo
      * armazenados.
@@ -30,7 +34,18 @@ public class Atleta {
      * 
      * @param esportePraticado
      */
-    public void setEsportePraticado(String esportePraticado) {
+    public void adicionarEsporte(String esportePraticado) {
         this.esportePraticado = esportePraticado;
+    }
+    /**
+     * 
+     * @return
+     */
+    public int getTempoDePratica() {
+        return tempoDePratica;
+    }
+
+    public void adicionarTempo(int tempoDePratica) {
+        this.tempoDePratica = tempoDePratica;
     }
 }

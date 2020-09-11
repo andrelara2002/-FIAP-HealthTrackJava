@@ -3,7 +3,7 @@ package br.com.fiap.healthtrack;
  * Classe que contém informações
  * sobre peso para a classe Resumo
  */
-public class Peso {
+public class Peso{
     /**
      * Valor do peso a ser armazenado
      * na classe

@@ -25,7 +25,7 @@ public interface InterfaceUsuario {
      */
     public static void fazerCadastro() {
         Usuario u = new Usuario();
-        u.fazerCadastro("username", "password", 18);
+        u.fazerCadastro("username", "password", 18, 1);
         System.out.println(u.getNome());
         System.out.println(u.getSenha());
         System.out.println(u.getIdade());
@@ -41,7 +41,7 @@ public interface InterfaceUsuario {
      */
     public static void definirLogin(String username, String password) {
         Usuario u = new Usuario();
-        u.fazerCadastro(username, password, 0);
+        u.fazerCadastro(username, password, 0, 1);
         String response = u.realizarLogin(username, password);
         System.out.println(response);
     }
