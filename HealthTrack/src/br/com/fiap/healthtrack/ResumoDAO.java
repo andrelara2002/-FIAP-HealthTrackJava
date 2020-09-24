@@ -12,12 +12,13 @@ public class ResumoDAO {
     private String esportePrincipal;//Pos [6]
     private String meta;//Pos [5]
     private int kcal;//Pos [4]
-    private int altura;//Pos [3]
+    private double altura;//Pos [3]
     private int imc;//Pos [2]
     private int peso; //Pos [1]
     private int passos;//Pos [0]
     private int anosPratica;//pos [7]
     private int dataPeso;//Pos [8]
+    private int coposAgua;//pos [9]
 
     ResumoDAO(){}
 
@@ -52,11 +53,11 @@ public class ResumoDAO {
         resumo[4] = String.valueOf(this.kcal);
     }
 
-    public int getAltura() {
-        return Integer.parseInt(resumo[3]);
+    public double getAltura() {
+        return Double.parseDouble(resumo[3]);
     }
 
-    public void setAltura(int altura) {
+    public void setAltura(double altura) {
         this.altura = altura;
         resumo[3] = String.valueOf(this.altura);
     }
@@ -108,5 +109,14 @@ public class ResumoDAO {
 
     public String[] getAll(){
         return this.resumo;
+    }
+
+    public int getcoposAgua(){
+        return Integer.parseInt(resumo[9]);
+    }
+
+    public void setcoposAgua(int quantidade){
+        this.coposAgua = quantidade;
+        resumo[9] = String.valueOf(this.coposAgua);
     }
 }
