@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TelaUsuario",
+            "request": "launch",
+            "mainClass": "br.com.fiap.healthtrack.TelaUsuario",
+            "projectName": "HealthTrack"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TelaResumo",
+            "request": "launch",
+            "mainClass": "br.com.fiap.healthtrack.TelaResumo",
+            "projectName": "HealthTrack"
+        },
+        {
+            "name": "Debug Java",
+            "type": "java",
+            "request": "launch",
+            "externalConsole": true,
+            "stopOnEntry": true,
+            "preLaunchTask": "build",
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${workspaceRoot}",
+            "startupClass": "${workspaceRoot}${file}",
+            "sourcePath": [
+                "${workspaceRoot}"
+            ],
+            "classpath": [
+                "${workspaceRoot}"
+            ],
+            "options": [],
+            "args": []
+        }
+    ],
+    "compounds": []
+}
