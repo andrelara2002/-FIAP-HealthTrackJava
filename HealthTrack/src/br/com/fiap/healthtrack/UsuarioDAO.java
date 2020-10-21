@@ -46,11 +46,11 @@ public class UsuarioDAO {
             conexao = ConexaoBanco.obterConexao();
             try {
                 java.sql.Statement stmt = conexao.createStatement();
-                ResultSet rs = stmt.executeQuery("SELECT * FROM T_USUARIO");
+                ResultSet rs = stmt.executeQuery("SELECT * FROM T_USUARIO ORDER BY cd_usuario ASC");
 
                 while (rs.next()){
                     String nome = rs.getString(2);
-                    double idade = rs.getDouble(3);
+                    int idade = rs.getInt(3);
 
                     System.out.println(nome + " " + idade);
                 }

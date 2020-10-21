@@ -16,7 +16,9 @@ public interface testeUsuario {
 
         usuario.setNome(response1);
         usuario.setIdade(response2);
-        
+
+        usuarioDAO.cadastrar(usuario);
+        System.out.println("\n\n\n--");
         usuarioDAO.recuperarDados();
     }
 }
