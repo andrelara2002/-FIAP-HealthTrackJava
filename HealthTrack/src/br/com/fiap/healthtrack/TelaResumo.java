@@ -21,6 +21,7 @@ public class TelaResumo {
      * @param args
      */
     public static void main(String[] args) {
+        
         /**
          * Iniciando a classe Scanner para ser utilizada.
          */

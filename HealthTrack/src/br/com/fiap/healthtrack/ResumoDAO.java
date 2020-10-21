@@ -1,11 +1,14 @@
 package br.com.fiap.healthtrack;
 
 import java.lang.reflect.Array;
+import java.sql.Connection;
 import java.util.ArrayList;
 
 import javax.sql.DataSource;
 
 public class ResumoDAO {
+
+    private Connection conexao = null;
 
     String[] resumo = new String[10];
     private DataSource ds;
@@ -119,4 +122,5 @@ public class ResumoDAO {
         this.coposAgua = quantidade;
         resumo[9] = String.valueOf(this.coposAgua);
     }
+    
 }

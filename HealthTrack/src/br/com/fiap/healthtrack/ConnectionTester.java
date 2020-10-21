@@ -1,6 +1,5 @@
 package br.com.fiap.healthtrack;
 
-import java.beans.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -25,10 +24,11 @@ public class ConnectionTester {
         java.sql.Statement stmt = conexao.createStatement();
 
         PreparedStatement pstmt = conexao.prepareStatement("INSERT INTO T_USUARIO (cd_usuario, nm_usuario, nr_idadeusuario) VALUES (SEQ_USUARIO.NEXTVAL, ?, ?)");
-        pstmt.setString(1, "Rogerio");
-        pstmt.setInt(2, 12);
+        pstmt.setString(1, "Marcela");
+        pstmt.setInt(2, 21);
         
         pstmt.executeUpdate();
+        pstmt.executeUpdate("UPDATE T_USUARIO SET nr_idadeusuario = 32 WHERE cd_usuario = 5");
 
         ResultSet result = stmt.executeQuery("SELECT * FROM T_USUARIO ORDER BY cd_usuario ASC");
 

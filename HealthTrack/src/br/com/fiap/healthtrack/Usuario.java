@@ -26,6 +26,19 @@ public class Usuario {
     private String meta;
     private int tipo;
 
+    public Usuario(String nome, String senha, Integer idade, String meta, int tipo){
+        super();
+        this.nome = nome;
+        this.senha = senha;
+        this.idade = idade;
+        this.meta = meta;
+        this.tipo = tipo;
+    }
+
+    public Usuario(){
+        super();
+    }
+
     /**
      * Recupera os dados de nome do usuário
      * 
