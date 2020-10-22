@@ -8,6 +8,7 @@ public class Resumo {
     Altura a = new Altura();
     Peso p = new Peso();
     Esportes e = new Esportes();
+    Alimentos al = new Alimentos();
     /**
      * Tipos de esportes disponiveis no sistema
      */
@@ -28,6 +29,14 @@ public class Resumo {
      * Valor do índice de massa corporal (IMC)
      */
     private int imc;
+
+    private int pressaoSistolica;
+
+    private int pressaoDiastolica;
+
+    private String nomeAlimento = al.getNome();
+
+    private int caloriasAlimentos = al.getCalorias();
     
     /**
      * Definir a quantidade de passos dada

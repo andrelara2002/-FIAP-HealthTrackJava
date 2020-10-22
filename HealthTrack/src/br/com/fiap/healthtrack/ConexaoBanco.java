@@ -11,7 +11,7 @@ public class ConexaoBanco {
             Class.forName("oracle.jdbc.driver.OracleDriver");
             conexao = DriverManager.getConnection("jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL", "RM85856",
                     "191102");
-            System.out.println("Banco de dados conectado");
+            System.out.println("\nBanco de dados conectado\n///////////////////////////\n");
         }
 
         catch (SQLException e) {
