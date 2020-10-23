@@ -6,6 +6,11 @@ import java.util.Calendar;
  * Classe que contém informações sobre peso para a classe Resumo
  */
 public class Peso {
+    public Peso(int peso, Calendar data){
+        this.peso = peso;
+        this.data = data;
+    }
+    public Peso(){}
     /**
      * Valor do peso a ser armazenado na classe
      */
