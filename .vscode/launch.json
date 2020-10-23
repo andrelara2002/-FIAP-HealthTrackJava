@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestePressao",
+            "request": "launch",
+            "mainClass": "br.com.fiap.healthtrack.TestePressao",
+            "projectName": "HealthTrack"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PassosTeste",
+            "request": "launch",
+            "mainClass": "br.com.fiap.healthtrack.PassosTeste",
+            "projectName": "HealthTrack"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TesteAltura",
             "request": "launch",
             "mainClass": "br.com.fiap.healthtrack.TesteAltura",
